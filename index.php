@@ -2,10 +2,18 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+$silvia = new Usuario();
+$silvia->loadbyId(3);
+
+echo $silvia;
+
+
+
+
+/*$sql = new Sql();
 
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
-echo json_encode($usuarios);
+echo json_encode($usuarios); */
 
 ?>
